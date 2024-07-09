@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="./imgs/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./general.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>البروف</title>
+  </head>
+  <body>
+    <button class="arrow-up">
+      <i class="fa-icon-blue fa-solid fa-arrow-up"></i>
+    </button>
+    <header>
+      <div class="container header-container">
+        <div class="mobile-nav hidden">
+          <button class="close-modal-btn">
+            <i class="fa-icon fa-solid fa-xmark"></i>
+          </button>
+          <nav class="mobile">
+            <ul class="nav-links">
+              <li class="nav-link">
+                <a href="#about-us">لي تاخد درس عندنا</a>
+              </li>
+              <li class="nav-link">
+                <a href="#our-students">الطلاب المتفوقين</a>
+              </li>
+              <li class="nav-link"><a href="#table">المواعيد</a></li>
+              <li class="nav-link"><a href="#contact-us">احجز الان</a></li>
+            </ul>
+          </nav>
+          <nav class="mobile">
+            <ul class="social-links">
+              <li>
+                <a href="#">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/128/1384/1384053.png"
+                    alt="facebook logo"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/128/15713/15713434.png"
+                    alt="whatsapp logo"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/128/5968/5968771.png"
+                    alt="massenger logo"
+                  />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="overlay hidden"></div>
+        <div class="logo"><a href="#">البروف</a></div>
+        <nav class="desktop">
+          <ul class="nav-links">
+            <li class="nav-link"><a href="#about-us">لي تاخد درس عندنا</a></li>
+            <li class="nav-link">
+              <a href="#our-students">الطلاب المتفوقين</a>
+            </li>
+            <li class="nav-link"><a href="#table">المواعيد</a></li>
+            <li class="nav-link"><a href="#contact-us">احجز الان</a></li>
+          </ul>
+        </nav>
+        <nav class="desktop">
+          <ul class="social-links">
+            <li>
+              <a href="#">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/1384/1384053.png"
+                  alt="facebook logo"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/15713/15713434.png"
+                  alt="whatsapp logo"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/128/5968/5968771.png"
+                  alt="massenger logo"
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button class="mobile-menu-btn">
+          <i class="fa-icon-blue fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section id="hero-section">
+        <img
+          src="./imgs/hero-decorator 1.png"
+          class="hero-decorator"
+          alt="some chemisty lab equeiptments"
+        />
+        <img
+          src="./imgs/hero-decorator 2.png"
+          class="hero-decorator"
+          alt="atom"
+        />
+        <img
+          src="./imgs/hero-decorator 3.png"
+          class="hero-decorator"
+          alt="einestien cartoon flat character"
+        />
+        <img
+          src="./imgs/hero-decorator 4.png"
+          class="hero-decorator"
+          alt="some phyiscs functions"
+        />
+        <img
+          src="./imgs/hero-decorator 5.png"
+          class="hero-decorator"
+          alt="E = M * C the famous equation for inesitien"
+        />
+        <img
+          src="./imgs/hero-decorator 6.png"
+          class="hero-decorator"
+          alt="adrenalin formula"
+        />
+        <svg
+          class="wave"
+          id="Layer_1"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 433.64 115.7"
+        >
+          <path
+            class="cls-1"
+            d="M560,115.7V231.4H126.36V199.24C369,219.76,379.8,115.7,560,115.7Z"
+            transform="translate(-126.36 -115.7)"
+          />
+        </svg>
+        <div class="container hero-container grid grid-2">
+          <div class="hero-image-box">
+            <img
+              src="./imgs/hero-image.png"
+              alt="man looking right with some chemistry and physics sympols floating around him"
+            />
+          </div>
+          <div class="hero-text-box">
+            <h1>البروف</h1>
+            <p class="hero-slogan">لان الفهم هو اول خطوة للنجاح</p>
+            <a class="btn" href="#contact-us">احجز الان</a>
+          </div>
+        </div>
+      </section>
+      <section id="about-us" class="about-us-section container">
+        <div class="section-title">
+          <h2 class="heading-2 heading-blue">لي تاخد درس عندنا</h2>
+          <i
+            class="fa-icon-blue fa-regular fa-circle-question fa-flip-horizontal"
+          ></i>
+        </div>
+        <div class="section-content grid grid-2">
+          <div class="about-text-box">
+            <p>
+              عشان تفهم أكتر وتحقق أعلى الدرجات، لازم تتعلم من مصدر موثوق. وده
+              اللي هنقدمه لك هنا. بخبرة تفوق ٣٠ سنة في تدريس الكيمياء والفيزياء،
+              وخلال الفترة درّسنا لآلاف الطلاب اللي حققوا نجاحات باهرة في
+              دراستهم وحياتهم المهنية
+            </p>
+            <h3 class="h3-heading">طرق التدريس</h3>
+            <p>
+              باستخدام أساليب تدريس حديثة وتفاعلية بتخلّي الدرس ممتع ومفيد في
+              نفس الوقت. من خلال الشرح الواضح والأمثلة العملية، هتفهم المواد
+              بشكل أعمق وأفضل. بالإضافة لكده، بيهتم بالمتابعة المستمرة مع الطلاب
+              وتقديم الدعم اللازم لهم علشان يتفوقوا.
+            </p>
+          </div>
+          <div class="about-image-box">
+            <img src="./imgs/about-us.jpg" alt="" />
+            <p><span>البروف:- </span>ايمن حماد</p>
+          </div>
+        </div>
+      </section>
+      <section id="features" class="features-section blue">
+        <div class="container">
+          <div class="section-title">
+            <h2 class="heading-2">مزايا التعلم عندنا</h2>
+            <i class="fa-icon fa-solid fa-thumbs-up"></i>
+          </div>
+          <div class="feature-cards">
+            <div class="feature-card">
+              <i class="fa-icon-blue fa-solid fa-brain"></i>
+              <h3 class="h3-heading">فهم عميق</h3>
+              <p>مش بس هتحفظ، لكن كمان هتفهم المواد بعمق</p>
+            </div>
+            <div class="feature-card">
+              <i class="fa-icon-blue fa-solid fa-display"></i>
+              <h3 class="h3-heading">أساليب حديثة</h3>
+              <p>بنستخدم أحدث الطرق التعليمية اللي بتساعد على الفهم السريع</p>
+            </div>
+
+            <div class="feature-card">
+              <i class="fa-icon-blue fa-solid fa-headset"></i>
+              <h3 class="h3-heading">دعم مستمر</h3>
+              <p>هنكون دايمًا معاك في كل خطوة، سواء في الفصل أو عبر الإنترنت</p>
+            </div>
+            <div class="feature-card">
+              <i class="fa-icon-blue fa-solid fa-trophy"></i>
+              <h3 class="h3-heading">نتائج ممتازة</h3>
+              <p>طلابنا دايمًا بيحققوا أعلى الدرجات وبيكونوا من الأوائل</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="our-students" class="our-students-section">
+        <img
+          src="./imgs/formula 2.png"
+          alt="chemistry formular"
+          class="background-img"
+        />
+        <img
+          src="./imgs/formula.png"
+          alt="chemistry formula"
+          class="background-img"
+        />
+        <div class="section-title">
+          <h2 class="heading-2 heading-blue">طلابنا</h2>
+          <i class="fa-icon-blue fa-solid fa-graduation-cap"></i>
+        </div>
+        <div class="student-cards">
+          <div class="student-card">
+            <div class="student-card-image-box">
+              <img
+                src="./imgs/student 1.jfif"
+                alt="man looking to the camera"
+              />
+            </div>
+            <div class="student-card-text-box">
+              <h3 class="h3-heading h3-blue name">محمد اسماعيل</h3>
+              <p class="score">97%</p>
+              <p class="sepecification">ثانوية ازهرية</p>
+            </div>
+          </div>
+          <div class="student-card">
+            <div class="student-card-image-box">
+              <img
+                src="./imgs/student 2.jfif"
+                alt="man looking to the camera"
+              />
+            </div>
+            <div class="student-card-text-box">
+              <h3 class="h3-heading h3-blue name">محمد اسماعيل</h3>
+              <p class="score">97%</p>
+              <p class="sepecification">ثانوية ازهرية</p>
+            </div>
+          </div>
+          <div class="student-card">
+            <div class="student-card-image-box">
+              <img
+                src="./imgs/student 3.jfif"
+                alt="man looking to the camera"
+              />
+            </div>
+            <div class="student-card-text-box">
+              <h3 class="h3-heading h3-blue name">محمد اسماعيل</h3>
+              <p class="score">97%</p>
+              <p class="sepecification">ثانوية ازهرية</p>
+            </div>
+          </div>
+          <div class="student-card">
+            <div class="student-card-image-box">
+              <img
+                src="./imgs/student 4.jfif"
+                alt="man looking to the camera"
+              />
+            </div>
+            <div class="student-card-text-box">
+              <h3 class="h3-heading h3-blue name">محمد اسماعيل</h3>
+              <p class="score">97%</p>
+              <p class="sepecification">ثانوية ازهرية</p>
+            </div>
+          </div>
+          <div class="student-card">
+            <div class="student-card-image-box">
+              <img
+                src="./imgs/student 5.jfif"
+                alt="man looking to the camera"
+              />
+            </div>
+            <div class="student-card-text-box">
+              <h3 class="h3-heading h3-blue name">محمد اسماعيل</h3>
+              <p class="score">97%</p>
+              <p class="sepecification">ثانوية ازهرية</p>
+            </div>
+          </div>
+          <div class="student-card">
+            <div class="student-card-image-box">
+              <img
+                src="./imgs/student 6.jfif"
+                alt="man looking to the camera"
+              />
+            </div>
+            <div class="student-card-text-box">
+              <h3 class="h3-heading h3-blue name">محمد اسماعيل</h3>
+              <p class="score">97%</p>
+              <p class="sepecification">ثانوية ازهرية</p>
+            </div>
+          </div>
+          <div class="student-card">
+            <div class="student-card-image-box">
+              <img
+                src="./imgs/student 7.jfif"
+                alt="man looking to the camera"
+              />
+            </div>
+            <div class="student-card-text-box">
+              <h3 class="h3-heading h3-blue name">محمد اسماعيل</h3>
+              <p class="score">97%</p>
+              <p class="sepecification">ثانوية ازهرية</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="table" class="table-section blue">
+        <div class="container table-container">
+          <div class="section-title">
+            <h2 class="heading-2">اعرف مواعيدك</h2>
+            <i class="fa-icon fa-regular fa-calendar"></i>
+          </div>
+          <div class="info grid grid-2">
+            <form>
+              <div class="input">
+                <select name="" id="">
+                  <option value="" disabled selected>اختر سنتك الدراسية</option>
+                  <option value="1">اولي ثانوي</option>
+                  <option value="2">تانيه ثانوي</option>
+                  <option value="3">تالته ثانوي</option>
+                </select>
+              </div>
+              <div class="input">
+                <select name="subject" id="subject">
+                  <option value="chem & physics" selected>
+                    كيمياء و فيزياء
+                  </option>
+                  <option value="chem">كيمياء</option>
+                  <option value="physics">فيزياء</option>
+                </select>
+              </div>
+            </form>
+            <div class="cost">
+              <p>المصاريف:-</p>
+              <span class="money" data-name="money">300</span>
+            </div>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>السبت</th>
+                <th>الاحد</th>
+                <th>الاثنين</th>
+                <th>الثلاثاء</th>
+                <th>الاربعاء</th>
+                <th>الخميس</th>
+                <th>الجمعة</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>كيمياء</td>
+                <td>السبت</td>
+                <td>الاحد</td>
+                <td>الاثنين</td>
+                <td>الثلاثاء</td>
+                <td>الاربعاء</td>
+                <td>الخميس</td>
+                <td>الجمعة</td>
+              </tr>
+              <tr>
+                <td>فيزياء</td>
+                <td>السبت</td>
+                <td>الاحد</td>
+                <td>الاثنين</td>
+                <td>الثلاثاء</td>
+                <td>الاربعاء</td>
+                <td>الخميس</td>
+                <td>الجمعة</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="contact-us container" id="contact-us">
+        <div class="section-title">
+          <h2 class="heading-2 heading-blue">املئ الفورم واحجز الان</h2>
+          <i class="fa-icon-blue fa-regular fa-hand-pointer"></i>
+        </div>
+        <div class="section-content grid grid-2">
+          <form>
+            <div class="input">
+              <input type="text" min="15" placeholder="اكتب اسمك رباعي" />
+            </div>
+            <div class="input">
+              <select name="status" id="status">
+                <option value="priate" selected>برايفت</option>
+                <option value="ordinary">عادي</option>
+              </select>
+            </div>
+            <div class="input">
+              <select name="" id="">
+                <option value="" disabled selected>اختر سنتك الدراسية</option>
+                <option value="1">اولي ثانوي</option>
+                <option value="2">تانيه ثانوي</option>
+                <option value="3">تالته ثانوي</option>
+              </select>
+            </div>
+            <div class="input">
+              <select name="subject" id="subject">
+                <option value="chem & physics" selected>كيمياء و فيزياء</option>
+                <option value="chem">كيمياء</option>
+                <option value="physics">فيزياء</option>
+              </select>
+            </div>
+          </form>
+          <div class="cta-whatsapp">
+            <div class="whatsapp-logo">
+              <img
+                src="https://cdn-icons-png.flaticon.com/128/15713/15713434.png"
+                alt="whatsapp logo"
+              />
+            </div>
+            <button class="btn">احجز الان</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="blue">
+      <div class="container">
+        <p>تم تصميم و انشاء الموقع بواسطة <strong>م/كريم غانم</strong></p>
+        <nav>
+          <ul>
+            <li>
+              <a href="">
+                <i class="fa-icon fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-icon fa-brands fa-whatsapp"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-icon fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-icon fa-brands fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>

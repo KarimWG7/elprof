@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Marhey:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: #008ef5;
+  --hover-color: #047acf;
+  --img-back: #d9d9d9;
+  --background-color: white;
+  --text-color: #5c5c5c;
+  --border-color: rgba(92, 92, 92, 0.25);
+  --text-white-color: white;
+  --heading-large: 3.8rem;
+  --heading-medium: 3.2rem;
+  --heading-small: 2.6rem;
+  --text-huge: 2.2rem;
+  --text-large: 1.8rem;
+  --text-medium: 1.6rem;
+  --text-small: 1.4rem;
+  --transition: all ease 0.3s;
+}
+
+body {
+  font-family: "Marhey", "Inter", sans-serif;
+  color: var(--text-color);
+  position: relative;
+}
+
+.container {
+  max-width: 140rem;
+  padding: 0 3rem;
+  margin: 0 auto;
+}
+@media (max-width: 1370px) {
+  .container {
+    max-width: 100rem;
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    max-width: 80rem;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    max-width: 60rem;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.fa-icon {
+  font-size: 2.8rem;
+  color: white;
+}
+
+.fa-icon-blue {
+  font-size: 2.8rem;
+  color: var(--primary-color);
+}
+
+section {
+  padding-top: 8rem !important;
+  padding-bottom: 8rem !important;
+}
+section:first-child {
+  background-color: transparent;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.blue {
+  background-color: var(--primary-color);
+}
+
+section .section-title {
+  margin-bottom: 5rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+section .section-title .heading-2 {
+  font-size: var(--heading-small);
+  color: white;
+}
+
+section .section-title .heading-2.heading-blue {
+  color: var(--primary-color);
+}
+
+.h3-heading {
+  font-size: var(--text-huge);
+}
+.h3-heading.h3-blue {
+  color: var(--primary-color);
+}
+
+.grid {
+  display: grid;
+  justify-items: center;
+}
+.grid-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.btn {
+  font-family: "Marhey", "Inter", sans-serif;
+  padding: 0.25rem 1.5rem;
+  border-radius: 12px;
+  background-color: var(--primary-color);
+  color: var(--text-white-color);
+  font-size: var(--text-large);
+  width: 15rem;
+  text-align: center;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+  transition: var(--transition);
+  line-height: 1.7;
+}
+
+.btn:hover {
+  background-color: var(--hover-color);
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+.btn:active {
+  background-color: var(--hover-color);
+  transform: scale(1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.input {
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  border: 1px solid var(--primary-color);
+  background-color: var(--background-color);
+  transition: var(--transition);
+  max-width: 40rem;
+  width: 100%;
+}
+.input select,
+.input input {
+  width: 100%;
+  font-size: var(--text-medium);
+  color: var(--text-color);
+  font-family: "Marhey", "Inter", sans-serif;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.input:has(select:focus) {
+  box-shadow: inset 0 0 0 2px var(--text-color);
+}
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button.arrow-up {
+  position: fixed;
+  bottom: 5rem;
+  right: 3rem;
+  background: var(--background-color);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+button.arrow-up .fa-icon-blue {
+  font-size: 3rem;
+}
