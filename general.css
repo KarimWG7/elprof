@@ -6,6 +6,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* outline: 1px solid #000; */
 }
 
 html {
@@ -203,5 +204,5 @@ button.arrow-up {
   z-index: 1000;
 }
 button.arrow-up .fa-icon-blue {
-  font-size: 3rem;
+  font-size: 2.4rem;
 }

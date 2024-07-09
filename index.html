@@ -184,6 +184,46 @@
           </div>
         </div>
       </section>
+      <section class="qoutes blue" id="qoutes">
+        <div class="container slider-container">
+          <div class="qoutes-container">
+            <div class="qoute">
+              <div class="qoute-image-box">
+                <img
+                  src="https://grupa.it/sites/default/files/2023-10/einstein-8041625_1280.png"
+                  alt="Albert Einstein"
+                />
+              </div>
+              <div class="qoute-box">
+                <blockquote class="qoute-text">
+                  "الواقع هو مجرد وهم، وإن كان ثابتًا بشكل كبير."
+                </blockquote>
+                <span class="author">ألبرت أينشتاين</span>
+              </div>
+            </div>
+            <div class="qoute">
+              <div class="qoute-image-box">
+                <img
+                  src="https://wordsworth-editions.com/wp-content/uploads/2022/05/Aristole-Author.jpg"
+                  alt="Arsto"
+                />
+              </div>
+              <div class="qoute-box">
+                <blockquote class="qoute-text">
+                  "إذا كنت لا تستطيع إثباتها بالتجربة، فهي ليست كيمياء."
+                </blockquote>
+                <span class="author">أرسطو</span>
+              </div>
+            </div>
+          </div>
+          <button class="slider-arrow left">
+            <i class="fa-icon-blue fa-solid fa-arrow-left"></i>
+          </button>
+          <button class="slider-arrow right">
+            <i class="fa-icon-blue fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </section>
       <section id="about-us" class="about-us-section container">
         <div class="section-title">
           <h2 class="heading-2 heading-blue">لي تاخد درس عندنا</h2>
@@ -439,27 +479,35 @@
         <div class="section-content grid grid-2">
           <form>
             <div class="input">
-              <input type="text" min="15" placeholder="اكتب اسمك رباعي" />
+              <input
+                id="name"
+                type="text"
+                min="15"
+                placeholder="اكتب اسمك رباعي"
+                required
+              />
             </div>
             <div class="input">
-              <select name="status" id="status">
-                <option value="priate" selected>برايفت</option>
-                <option value="ordinary">عادي</option>
+              <select name="status" id="status" required>
+                <option value="برايفت" selected>برايفت</option>
+                <option value="عادي">عادي</option>
               </select>
             </div>
             <div class="input">
-              <select name="" id="">
+              <select name="year" id="year" required>
                 <option value="" disabled selected>اختر سنتك الدراسية</option>
-                <option value="1">اولي ثانوي</option>
-                <option value="2">تانيه ثانوي</option>
-                <option value="3">تالته ثانوي</option>
+                <option value="اولي ثانوي">اولي ثانوي</option>
+                <option value="تانيه ثانوي">تانيه ثانوي</option>
+                <option value="تالته ثانوي">تالته ثانوي</option>
               </select>
             </div>
             <div class="input">
-              <select name="subject" id="subject">
-                <option value="chem & physics" selected>كيمياء و فيزياء</option>
-                <option value="chem">كيمياء</option>
-                <option value="physics">فيزياء</option>
+              <select name="subject" id="subject" required>
+                <option value="كيمياء و فيزياء" selected>
+                  كيمياء و فيزياء
+                </option>
+                <option value="كيمياء">كيمياء</option>
+                <option value="فيزياء">فيزياء</option>
               </select>
             </div>
           </form>
