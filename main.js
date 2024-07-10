@@ -9,12 +9,17 @@ const arrowUp = document.querySelector("button.arrow-up");
 
 mobileNavMenuBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  mobileNav.classList.remove("hidden");
+  mobileNav.classList.remove("out", "hidden");
+  mobileNav.classList.add("in");
   overlay.classList.remove("hidden");
 });
 const removeMenu = () => {
-  mobileNav.classList.add("hidden");
+  mobileNav.classList.add("out");
+  mobileNav.classList.remove("in");
   overlay.classList.add("hidden");
+  setTimeout(() => {
+    mobileNav.classList.add("hidden");
+  }, 100);
 };
 
 closeModalBtn.onclick = removeMenu;
@@ -40,6 +45,11 @@ let currentSlideIndex = 0; // Track current slide index
 function showSlide(slideIndex) {
   slides.forEach((slide, index) => {
     slide.style.display = index === slideIndex ? "flex" : "none";
+    if (index === currentSlideIndex) {
+      slide.classList.add("active", "in");
+    } else {
+      slide.classList.add("out");
+    }
   });
   currentSlideIndex = slideIndex;
 }
@@ -70,12 +80,22 @@ const subject = form.querySelector("select#subject");
 const phone = "+201022621695";
 const lineBreak = encodeURIComponent("\n");
 
-submitBtn.onclick = (e) => {
+year.onchange = () => submitBtn.removeAttribute("disabled");
+
+form.onsubmit = (e) => {
   e.preventDefault();
-  const codedName = encodeURIComponent(nameInput.value.trim());
-  const codedYear = encodeURIComponent(year.vlaue);
-  const codedStatus = encodeURIComponent(mode.vlaue);
-  const codedSubject = encodeURIComponent(subject.vlaue);
-  const actoin = `https://wa.me/${phone}?text=${codedName} ${lineBreak} ${codedYear}  ${lineBreak} ${codedStatus}  ${lineBreak} ${codedStatus}`;
+  const encodedName = encodeURIComponent(nameInput.value.trim());
+  const text = `
+  السلام عليكم ورحمه الله وبركاته 
+  ${lineBreak}
+  الاسم:- ${encodedName}
+  ${lineBreak}
+  العام الدراسي:- ${encodeURI(year.value)}
+  ${lineBreak}
+  الماده:- ${encodeURI(subject.value)}
+  ${lineBreak}
+  ${encodeURI(mode.value)}
+  `;
+  const actoin = `https://wa.me/${phone}?text=${text}`;
   window.open(actoin, "_blank");
 };
