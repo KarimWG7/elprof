@@ -12,7 +12,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  /* overflow-y: hidden; */
+  overflow-x: hidden;
 }
 
 :root {
@@ -191,19 +191,63 @@ a {
 
 button.arrow-up {
   position: fixed;
-  bottom: 5rem;
+  bottom: 3rem;
   right: 3rem;
   background: var(--background-color);
-  width: 4rem;
-  height: 4rem;
+  width: 4.5rem;
+  height: 4.5rem;
   border-radius: 50%;
   padding: 1rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  animation: pulse 5s ease-in-out infinite, showup 0.5s ease-in;
+}
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  2% {
+    transform: scale(1.2);
+  }
+  4% {
+    transform: scale(1);
+  }
+  6% {
+    transform: scale(1.2);
+  }
+  8% {
+    transform: scale(1);
+  }
 }
 button.arrow-up .fa-icon-blue {
   font-size: 2.4rem;
+}
+button.arrow-up.hidden {
+  display: none;
+}
+button.arrow-up.out {
+  animation: fadein 0.5s ease-out;
+}
+@keyframes showup {
+  from {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
 }

@@ -478,18 +478,18 @@ section.about-us-section .about-text-box h3 {
 
 /************* Fetures Section Styles ***************/
 section#features .feature-cards {
-  display: grid;
-  row-gap: 5rem;
-  justify-items: center;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  justify-content: center;
 }
 
 section#features .feature-card {
-  width: 30rem;
+  flex-basis: 100%;
+  max-width: 40rem;
   background-color: var(--background-color);
   padding: 2rem 1rem;
   border-radius: 15px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -616,7 +616,17 @@ section#table .info .cost span {
   padding: 0.5rem 1rem;
 }
 
-table {
+table.desktop {
+  padding: 1rem;
+  font-size: var(--text-large);
+  width: 100%;
+  background-color: white;
+  border-radius: 25px;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.mobile {
+  display: none;
   padding: 1rem;
   font-size: var(--text-large);
   width: 100%;
@@ -636,10 +646,18 @@ tr {
   padding: 0.5rem 1rem;
   border-bottom: 1px solid rgba(0, 143, 245, 0.3);
 }
+th.hidden,
+td.hidden,
+tr.hidden {
+  display: none;
+}
 
 @media (max-width: 800px) {
-  section#table table {
+  section#table table.desktop {
     display: none;
+  }
+  section#table table.mobile {
+    display: table;
   }
 }
 @media (max-width: 600px) {
@@ -710,7 +728,7 @@ footer p {
   font-size: var(--text-medium);
 }
 footer .container {
-  padding: 0.5rem 3rem;
+  padding: 1rem 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -723,6 +741,10 @@ footer nav ul {
 }
 footer .fa-icon {
   font-size: 2rem;
+  transition: var(--transition);
+}
+footer .fa-icon:hover {
+  transform: scale(1.1);
 }
 @media (max-width: 600px) {
   footer p {

@@ -17,7 +17,7 @@
     <title>البروف</title>
   </head>
   <body>
-    <button class="arrow-up">
+    <button class="arrow-up hidden">
       <i class="fa-icon-blue fa-solid fa-arrow-up"></i>
     </button>
     <header>
@@ -41,7 +41,10 @@
           <nav class="mobile">
             <ul class="social-links">
               <li>
-                <a href="#">
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/profile.php?id=100005939478477"
+                >
                   <img
                     loading="lazy"
                     src="https://cdn-icons-png.flaticon.com/128/1384/1384053.png"
@@ -50,7 +53,7 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a target="_blank" href="https://wa.me/+201007609142">
                   <img
                     loading="lazy"
                     src="https://cdn-icons-png.flaticon.com/128/15713/15713434.png"
@@ -59,7 +62,7 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a target="_blank" href="https://m.me/100005939478477">
                   <img
                     loading="lazy"
                     src="https://cdn-icons-png.flaticon.com/128/5968/5968771.png"
@@ -85,7 +88,10 @@
         <nav class="desktop">
           <ul class="social-links">
             <li>
-              <a href="#">
+              <a
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=100005939478477"
+              >
                 <img
                   loading="lazy"
                   src="https://cdn-icons-png.flaticon.com/128/1384/1384053.png"
@@ -94,7 +100,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a target="_blank" href="https://wa.me/+201007609142">
                 <img
                   loading="lazy"
                   src="https://cdn-icons-png.flaticon.com/128/15713/15713434.png"
@@ -103,7 +109,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a target="_blank" href="https://m.me/100005939478477">
                 <img
                   loading="lazy"
                   src="https://cdn-icons-png.flaticon.com/128/5968/5968771.png"
@@ -411,7 +417,7 @@
           <div class="info grid grid-2">
             <form>
               <div class="input">
-                <select name="" id="">
+                <select name="year" id="table-year">
                   <option value="" disabled selected>اختر سنتك الدراسية</option>
                   <option value="1">اولي ثانوي</option>
                   <option value="2">تانيه ثانوي</option>
@@ -419,7 +425,7 @@
                 </select>
               </div>
               <div class="input">
-                <select name="subject" id="subject">
+                <select name="subject" id="table-subject">
                   <option value="chem & physics" selected>
                     كيمياء و فيزياء
                   </option>
@@ -433,41 +439,79 @@
               <span class="money" data-name="money">300</span>
             </div>
           </div>
-          <table>
-            <thead>
-              <tr>
-                <th></th>
-                <th>السبت</th>
-                <th>الاحد</th>
-                <th>الاثنين</th>
-                <th>الثلاثاء</th>
-                <th>الاربعاء</th>
-                <th>الخميس</th>
-                <th>الجمعة</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>كيمياء</td>
-                <td>السبت</td>
-                <td>الاحد</td>
-                <td>الاثنين</td>
-                <td>الثلاثاء</td>
-                <td>الاربعاء</td>
-                <td>الخميس</td>
-                <td>الجمعة</td>
-              </tr>
-              <tr>
-                <td>فيزياء</td>
-                <td>السبت</td>
-                <td>الاحد</td>
-                <td>الاثنين</td>
-                <td>الثلاثاء</td>
-                <td>الاربعاء</td>
-                <td>الخميس</td>
-                <td>الجمعة</td>
-              </tr>
-            </tbody>
+          <table class="desktop">
+            <tr>
+              <th></th>
+              <th>السبت</th>
+              <th>الاحد</th>
+              <th>الاثنين</th>
+              <th>الثلاثاء</th>
+              <th>الاربعاء</th>
+              <th>الخميس</th>
+              <th>الجمعة</th>
+            </tr>
+            <tr>
+              <th>كيمياء</th>
+              <td>السبت</td>
+              <td>الاحد</td>
+              <td>الاثنين</td>
+              <td>الثلاثاء</td>
+              <td>الاربعاء</td>
+              <td>الخميس</td>
+              <td>الجمعة</td>
+            </tr>
+            <tr>
+              <th>فيزياء</th>
+              <td>السبت</td>
+              <td>الاحد</td>
+              <td>الاثنين</td>
+              <td>الثلاثاء</td>
+              <td>الاربعاء</td>
+              <td>الخميس</td>
+              <td>الجمعة</td>
+            </tr>
+          </table>
+          <table class="mobile">
+            <tr>
+              <th></th>
+              <th>كيمياء</th>
+              <th>فيزياء</th>
+            </tr>
+            <tr>
+              <th>السبت</th>
+              <td>السبت</td>
+              <td>السبت</td>
+            </tr>
+            <tr>
+              <th>الاحد</th>
+              <td>الاحد</td>
+              <td>الاحد</td>
+            </tr>
+            <tr>
+              <th>الاثنين</th>
+              <td>الاثنين</td>
+              <td>الاثنين</td>
+            </tr>
+            <tr>
+              <th>الثلاثاء</th>
+              <td>الثلاثاء</td>
+              <td>الثلاثاء</td>
+            </tr>
+            <tr>
+              <th>الاربعاء</th>
+              <td>الاربعاء</td>
+              <td>الاربعاء</td>
+            </tr>
+            <tr>
+              <th>الخميس</th>
+              <td>الخميس</td>
+              <td>الخميس</td>
+            </tr>
+            <tr>
+              <th>الجمعة</th>
+              <td>الجمعة</td>
+              <td>الجمعة</td>
+            </tr>
           </table>
         </div>
       </section>
