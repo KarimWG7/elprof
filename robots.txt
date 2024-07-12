@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Disallow crawling of specific directories or files
+Disallow: /admin/
+Disallow: /config/
+Disallow: /includes/
+Disallow: /temp/
+Disallow: /cgi-bin/
+
+# Allow crawling of specific directories
+Allow: /imgs/
+Allow: /assets/
+
+# Set crawl delay if needed (in seconds)
+# Crawl-delay: 10
+
+# Specify sitemap location
+Sitemap: https://elprof.netlify.app/sitemap.xml
